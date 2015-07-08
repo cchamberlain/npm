@@ -8,20 +8,25 @@ function getVariant() {
     return platform;
   }
 
-  var path = process.env.PATH.toLowerCase();
-  function location(str) {
-    return path.indexOf(str);
-  }
-  var order = [
-    { "msys2": location("msys") },
-    { "mingw": location("mingw") },
-    { "cygwin": location("cygwin") }
-  ];
+  var path = process.env.PATH.toLowerCase()
+    , order = []
+    , loc = -1;
 
-  if(order.msys === -1 && order.mingw === -1 && order.cygwin === -1) {
+  function checkVariant(name, pathStr) {
+    loc = path.indexOf(pathStr);
+    if(loc !== -1) {
+      order.push({variant: name, location: loc});
+    }
+  }
+
+  checkVariant('msys2', 'msys');
+  checkVariant('mingw', 'mingw');
+  checkVariant('cygwin', 'cygwin');
+
+  if(order.length === 0) {
     return "win32";
   }
-  return Object.keys(order.sort(function(a, b) {
-    return a[1] - b[1];
-  })[0])[0];
+  return order.sort(function(a, b) {
+    return a.location - b.location;
+  })[0].variant;
 }
