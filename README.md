@@ -1,7 +1,12 @@
-npm fork with MSYS2/MINGW support (WIP)
-=======================================
-[![Build Status](https://img.shields.io/travis/npm/npm/master.svg)](https://travis-ci.org/npm/npm)
-## SYNOPSIS
+npm with MSYS2/MINGW/Cygwin support
+===================================
+
+**This is a WIP and is highly experimental.  Use at your own risk.**
+
+___
+
+Synopsis
+--------
 
 This is just enough info to get you up and running.
 
@@ -81,9 +86,9 @@ the npm Troubleshooting Guide:
 If that's not fancy enough for you, then you can fetch the code with
 git, and mess with it directly.
 
-## Installing on Cygwin
+## Installing on MSYS2 / MINGW / Cygwin
 
-No.
+Maybe.
 
 ## Uninstalling
 
