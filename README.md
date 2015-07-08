@@ -1,5 +1,5 @@
-fork of npm with msys2/mingw/cygwin support (WIP)
-=================================================
+npm fork with MSYS2/MINGW support (WIP)
+=======================================
 [![Build Status](https://img.shields.io/travis/npm/npm/master.svg)](https://travis-ci.org/npm/npm)
 ## SYNOPSIS
 
