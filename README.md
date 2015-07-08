@@ -1,5 +1,5 @@
-npm(1) -- a JavaScript package manager
-==============================
+fork of npm with msys2/mingw/cygwin support (WIP)
+=================================================
 [![Build Status](https://img.shields.io/travis/npm/npm/master.svg)](https://travis-ci.org/npm/npm)
 ## SYNOPSIS
 
