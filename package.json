@@ -28,7 +28,9 @@
     "man": "./man"
   },
   "main": "./lib/npm.js",
-  "bin": "./bin/npm-cli.js",
+  "bin": {
+    "npm": "./bin/npm-cli.js"
+  },
   "dependencies": {
     "abbrev": "~1.0.7",
     "ansicolors": "~0.3.2",
