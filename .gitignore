@@ -22,6 +22,24 @@ npm-debug.log
 .jshintrc
 .eslintrc
 
+# msys2
+/node_modules/unicode-length/
+/node_modules/debug-log/
+/node_modules/platformv/
+node_modules/.bin/har-validator
+node_modules/.bin/has-ansi
+node_modules/.bin/mkdirp
+node_modules/.bin/node-gyp
+node_modules/.bin/nopt
+node_modules/.bin/opener
+node_modules/.bin/rimraf
+node_modules/.bin/semver
+node_modules/.bin/strip-ansi
+node_modules/.bin/supports-color
+node_modules/.bin/uuid
+node_modules/.bin/which
+
+
 # dev dependencies
 /node_modules/deep-equal/
 /node_modules/marked-man/
